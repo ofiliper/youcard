@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap");
+
+$primary_color: #eef2f5;
+$secundary_color: rgba(0, 0, 0, 0.03);
+$third_color: #fbfdff;
+$gray_color: #f3f3f3;
+$gray_sec_color: #e2e2e2;
+$black_color: #323c47;
+$black_secundary_color: #8392a3;
+$blue_color: #1c4bf3;
+$danger_color: #e73d35;
+$red_color: #fa5f57;
+$success_color: #9abd1e;
+$green-sec-color: #d4ee75;
+
+$color: #ff8c4a;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    &:focus {
+        outline: none;
+    }
+}
+
+.container {
+    width: 520px;
+    margin: 0 auto;
+    width: $third_color;
+}
+
+body {
+    background: $gray_color;
+}
+
+.main {
+    position: relative;
+    & .container {
+        border-left: 1px solid $gray_sec_color;
+        border-right: 1px solid $gray_sec_color;
+        box-shadow: 0 0 100px #e7e7e7;
+    }
+    & .bg {
+        background-size: cover;
+        background-position: center;
+        margin-top: -200px;
+        position: relative;
+        height: 190px;
+        padding: 30px 50px 10px 50px;
+        transition: all 0.5s;
+        & .profile {
+            height: 120px;
+            width: 120px;
+            background: #fff;
+            box-shadow: 0 9px 20px #0000002d;
+            border-radius: 60px;
+            z-index: 9;
+            top: 220px;
+            background-size: cover;
+            background-position: center;
+            border: 3px solid #fff;
+            transition: all 0.4s;
+        }
+        & .active {
+            width: 70px;
+            height: 70px;
+            // position: fixed;
+            // top: -150px;
+            margin-top: -80px;
+            transition: all 0.8s ease-in-out;
+        }
+    }
+    & .bg-active {
+        background-position: center;
+        position: relative;
+        height: 120px;
+        padding: 30px 50px 10px 50px;
+        transition: all 0.7s ease-in-out;
+        margin-top: 0;
+        margin-bottom: -150px;
+    }
+    & .img {
+        position: relative;
+        & .cover {
+            // height: 220px;
+            height: 390px;
+            width: 100%;
+            position: relative;
+            background: #eef2f5;
+            border-radius: 5px 5px 5px 120px;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+    & .social {
+        text-align: center;
+        padding: 5px 0 35px 0;
+        & ul {
+            > li {
+                display: inline-block;
+                padding: 0 7px;
+                transition: all 0.4s;
+                &:hover {
+                    > a {
+                        color: $black_secundary_color;
+                    }
+                }
+                > a {
+                    transition: all 0.4s;
+                    font-size: 21px;
+                    color: $color;
+                }
+            }
+        }
+    }
+    & .copyright {
+        text-align: center;
+        padding: 20px 0 40px 0;
+        > img {
+            width: 150px;
+        }
+    }
+    & .content {
+        padding: 30px 50px 10px 50px;
+        margin-top: -90px;
+        position: relative;
+        > .bio {
+            padding: 10px 0;
+            > h2 {
+                font-size: 34px;
+                color: $black_color;
+                line-height: 46px;
+            }
+            > span {
+                font-size: 13px;
+            }
+        }
+        > h1 {
+            font-size: 24px;
+            color: $color;
+            font-weight: 600;
+        }
+        > p {
+            margin: 5px 0;
+            font-family: "Nunito";
+            letter-spacing: -0.5px;
+            padding: 10px 0 15px 0;
+        }
+        > .icon {
+            border-radius: 50px;
+            width: 370px;
+            margin: 20px auto;
+            padding: 25px 15px;
+            box-sizing: border-box;
+            box-shadow: 0 10px 20px $primary_color;
+            border: 1px solid $gray_sec_color;
+            // box-shadow: 0 10px 20px #e5e5e5;
+            > span {
+                display: grid;
+                grid-template-columns: 2fr 8fr;
+                font-size: 18px;
+                > i {
+                    color: $color;
+                    justify-self: center;
+                    align-self: center;
+                    font-size: 24px;
+                }
+                > span {
+                    justify-self: start;
+                    font-family: "Nunito";
+                    border-left: 1px solid rgb(228, 228, 228);
+                    padding-left: 15px;
+                }
+            }
+        }
+        > .button {
+            display: block;
+            text-align: center;
+            padding: 25px 0;
+            > a {
+                box-shadow: 0 10px 20px $gray_sec_color;
+                display: inline-block;
+                background: $color;
+                text-decoration: none;
+                border-radius: 35px;
+                color: $black_color;
+                font-family: "Nunito";
+                transition: all 0.2s;
+                text-transform: uppercase;
+                font-weight: 700;
+                padding: 15px 60px;
+                font-size: 18px;
+                &:active {
+                    transform: scale(0.995);
+                    box-shadow: 0 0 0 $primary_color;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 512px) {
+    .main {
+        & .img {
+            & .cover {
+                height: 270px;
+            }
+        }
+        & .bg {
+            margin-top: -150px;
+            height: 120px;
+            & .profile {
+                width: 100px;
+                height: 100px;
+                margin-left: -20px;
+            }
+            & .active {
+                width: 70px;
+                height: 70px;
+            }
+        }
+        & .bg-active {
+            margin-bottom: -150px;
+            margin-top: 0;
+        }
+        & .content {
+            margin-top: -30px;
+            padding: 15px 30px 15px 30px;
+            > .bio{
+                >h2{
+                    line-height: 42px;
+                }
+            }
+            > .icon {
+                width: 100%;
+                >span{
+                    font-size: 15px;
+                }
+            }
+        }
+        > .container {
+            width: 100%;
+        }
+    }
+}

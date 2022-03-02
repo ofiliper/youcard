@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+*:focus {
+  outline: none;
+}
+
+.container {
+  width: 520px;
+  margin: 0 auto;
+  width: #fbfdff;
+}
+
+body {
+  background: #f3f3f3;
+}
+
+.main {
+  position: relative;
+}
+
+.main .container {
+  border-left: 1px solid #e2e2e2;
+  border-right: 1px solid #e2e2e2;
+  -webkit-box-shadow: 0 0 100px #e7e7e7;
+          box-shadow: 0 0 100px #e7e7e7;
+}
+
+.main .bg {
+  background-size: cover;
+  background-position: center;
+  margin-top: -200px;
+  position: relative;
+  height: 190px;
+  padding: 30px 50px 10px 50px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.main .bg .profile {
+  height: 120px;
+  width: 120px;
+  background: #fff;
+  -webkit-box-shadow: 0 9px 20px #0000002d;
+          box-shadow: 0 9px 20px #0000002d;
+  border-radius: 60px;
+  z-index: 9;
+  top: 220px;
+  background-size: cover;
+  background-position: center;
+  border: 3px solid #fff;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.main .bg .active {
+  width: 70px;
+  height: 70px;
+  margin-top: -80px;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+.main .bg-active {
+  background-position: center;
+  position: relative;
+  height: 120px;
+  padding: 30px 50px 10px 50px;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+  margin-top: 0;
+  margin-bottom: -150px;
+}
+
+.main .img {
+  position: relative;
+}
+
+.main .img .cover {
+  height: 390px;
+  width: 100%;
+  position: relative;
+  background: #eef2f5;
+  border-radius: 5px 5px 5px 120px;
+  background-size: cover;
+  background-position: center;
+}
+
+.main .social {
+  text-align: center;
+  padding: 5px 0 35px 0;
+}
+
+.main .social ul > li {
+  display: inline-block;
+  padding: 0 7px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.main .social ul > li:hover > a {
+  color: #8392a3;
+}
+
+.main .social ul > li > a {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  font-size: 21px;
+  color: #ff8c4a;
+}
+
+.main .copyright {
+  text-align: center;
+  padding: 20px 0 40px 0;
+}
+
+.main .copyright > img {
+  width: 150px;
+}
+
+.main .content {
+  padding: 30px 50px 10px 50px;
+  margin-top: -90px;
+  position: relative;
+}
+
+.main .content > .bio {
+  padding: 10px 0;
+}
+
+.main .content > .bio > h2 {
+  font-size: 34px;
+  color: #323c47;
+  line-height: 46px;
+}
+
+.main .content > .bio > span {
+  font-size: 13px;
+}
+
+.main .content > h1 {
+  font-size: 24px;
+  color: #ff8c4a;
+  font-weight: 600;
+}
+
+.main .content > p {
+  margin: 5px 0;
+  font-family: "Nunito";
+  letter-spacing: -0.5px;
+  padding: 10px 0 15px 0;
+}
+
+.main .content > .icon {
+  border-radius: 50px;
+  width: 370px;
+  margin: 20px auto;
+  padding: 25px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 10px 20px #eef2f5;
+          box-shadow: 0 10px 20px #eef2f5;
+  border: 1px solid #e2e2e2;
+}
+
+.main .content > .icon > span {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 8fr;
+      grid-template-columns: 2fr 8fr;
+  font-size: 18px;
+}
+
+.main .content > .icon > span > i {
+  color: #ff8c4a;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 24px;
+}
+
+.main .content > .icon > span > span {
+  -ms-grid-column-align: start;
+      justify-self: start;
+  font-family: "Nunito";
+  border-left: 1px solid #e4e4e4;
+  padding-left: 15px;
+}
+
+.main .content > .button {
+  display: block;
+  text-align: center;
+  padding: 25px 0;
+}
+
+.main .content > .button > a {
+  -webkit-box-shadow: 0 10px 20px #e2e2e2;
+          box-shadow: 0 10px 20px #e2e2e2;
+  display: inline-block;
+  background: #ff8c4a;
+  text-decoration: none;
+  border-radius: 35px;
+  color: #323c47;
+  font-family: "Nunito";
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 15px 60px;
+  font-size: 18px;
+}
+
+.main .content > .button > a:active {
+  -webkit-transform: scale(0.995);
+          transform: scale(0.995);
+  -webkit-box-shadow: 0 0 0 #eef2f5;
+          box-shadow: 0 0 0 #eef2f5;
+}
+
+@media only screen and (max-width: 512px) {
+  .main .img .cover {
+    height: 270px;
+  }
+  .main .bg {
+    margin-top: -150px;
+    height: 120px;
+  }
+  .main .bg .profile {
+    width: 100px;
+    height: 100px;
+    margin-left: -20px;
+  }
+  .main .bg .active {
+    width: 70px;
+    height: 70px;
+  }
+  .main .bg-active {
+    margin-bottom: -150px;
+    margin-top: 0;
+  }
+  .main .content {
+    margin-top: -30px;
+    padding: 15px 30px 15px 30px;
+  }
+  .main .content > .bio > h2 {
+    line-height: 42px;
+  }
+  .main .content > .icon {
+    width: 100%;
+  }
+  .main .content > .icon > span {
+    font-size: 15px;
+  }
+  .main > .container {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
